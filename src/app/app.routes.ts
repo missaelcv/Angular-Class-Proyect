@@ -16,7 +16,7 @@ export const routes: Routes = [
    },
 
    {
-    path: '',
+    path: 'home',
     redirectTo: 'HomeComponet',
     pathMatch: 'full'
    }
