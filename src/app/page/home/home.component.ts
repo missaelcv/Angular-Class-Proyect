@@ -13,6 +13,14 @@ export class HomeComponent {
 
   //Creacion de Funcion 
   addProducts(): void{
-    this.alertService.questionAlert('Desea Agregar este Producto?','Si,Quiero Agregar el Producto', 'Agregar', 'Cancelar')
+    this.alertService.questionAlert('Desea Agregar este Producto?',
+      //Si El Usuario Quiere Agregar otro producto.
+      'Si,Quiero Agregar el Producto', 'Agregar', 'Cancelar').then((res)=>{
+        if(res.isConfirmed){
+          console.log('Si');
+        } else {
+          console.log('NO');
+        }
+      })
   }
 }
