@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { AlertService } from '../../service/alert.service';
 
 @Component({
   selector: 'app-home',
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  private alertService = inject(AlertService)
 
+  //Creacion de Funcion 
+  addProducts(): void{
+    this.alertService.questionAlert('Desea Agregar este Producto?','Si,Quiero Agregar el Producto', 'Agregar', 'Cancelar')
+  }
 }

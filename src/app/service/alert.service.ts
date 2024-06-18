@@ -14,12 +14,16 @@ export class AlertService {
         confirmButtoText: string,
         cancelButtonText: string
     ) {
-        return Swal.fire({
+        return Swal.fire({ 
             title: title,
             text: text,
             backdrop: 'rgba(255,255,255)',
-        })
+            icon: 'question',
+            showCancelButton:true,
+            confirmButtonColor: '#0d6efd',
+            cancelButtonColor: '#dc3545',
+            confirmButtonText: confirmButtoText,
+            cancelButtonText: cancelButtonText,
+        });
     }
-
 }
-
