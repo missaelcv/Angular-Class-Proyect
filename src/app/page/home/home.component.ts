@@ -48,11 +48,10 @@ export class HomeComponent implements OnInit {
     ]
   }
 
-  //Creacion de Funcion 
+  //Creacion de Funcion //Si El Usuario Quiere Agregar otro producto.
   addProducts(): void{
-    this.alertService.questionAlert('Desea Agregar este Producto?',
-      //Si El Usuario Quiere Agregar otro producto.
-      'Si,Quiero Agregar el Producto', 'Agregar', 'Cancelar').then((res)=>{
+    this.alertService.questionAlert('Desea Agregar este Producto?','Si, Agregar Producto',
+       'Agregar', 'Cancelar').then((res)=>{
         if(res.isConfirmed){
           console.log('Si');
         } else {
