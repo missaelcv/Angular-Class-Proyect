@@ -16,27 +16,32 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.cards =[
       {
-        name: 'Articulo',
+        id: 1,
+        name: 'Articulo1',
         amount: 50,
         descrition: 'lorem'
       },
       {
-        name: 'Articulo',
+        id: 2,
+        name: 'Articulo2',
         amount: 50,
         descrition: 'lorem'
       },
       {
-        name: 'Articulo',
+        id: 3,
+        name: 'Articulo3',
         amount: 50,
         descrition: 'lorem'
       },
       {
-        name: 'Articulo',
+        id: 4,
+        name: 'Articulo4',
         amount: 50,
         descrition: 'lorem'
       },
       {
-        name: 'Articulo',
+        id: 5,
+        name: 'Articulo5',
         amount: 50,
         descrition: 'lorem'
       },
